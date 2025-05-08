@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 using TaskManagerAPI.Data;
+using TaskManagerAPI.Interfaces;
+using TaskManagerAPI.Repositories;
+using TaskManagerAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +17,11 @@ builder.Services.AddOpenApi();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseInMemoryDatabase("TaskManagerDB"));
 
+// Injeções de dependência (IoD)
+builder.Services.AddScoped<ITaskService, TaskService>();
+builder.Services.AddScoped<ITaskRepository, TaskRepository>();
 
+// Build
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
