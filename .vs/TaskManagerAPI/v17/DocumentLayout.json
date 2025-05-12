@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\marzi\\OneDrive\\Documentos\\Development\\_Git\\TaskManagerAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{79025FE1-8D6E-4E8F-905C-1835244CE965}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\marzi\\onedrive\\documentos\\development\\_git\\taskmanagerapi\\taskmanagerapi\\repositories\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79025FE1-8D6E-4E8F-905C-1835244CE965}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\repositories\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{79025FE1-8D6E-4E8F-905C-1835244CE965}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\marzi\\onedrive\\documentos\\development\\_git\\taskmanagerapi\\taskmanagerapi\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79025FE1-8D6E-4E8F-905C-1835244CE965}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{79025FE1-8D6E-4E8F-905C-1835244CE965}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\marzi\\onedrive\\documentos\\development\\_git\\taskmanagerapi\\taskmanagerapi\\dtos\\task\\taskcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79025FE1-8D6E-4E8F-905C-1835244CE965}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\dtos\\task\\taskcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79025FE1-8D6E-4E8F-905C-1835244CE965}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\marzi\\onedrive\\documentos\\development\\_git\\taskmanagerapi\\taskmanagerapi\\repositories\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79025FE1-8D6E-4E8F-905C-1835244CE965}|TaskManagerAPI\\TaskManagerAPI.csproj|solutionrelative:taskmanagerapi\\repositories\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79025FE1-8D6E-4E8F-905C-1835244CE965}|TaskManagerAPI\\TaskManagerAPI.csproj|c:\\users\\marzi\\onedrive\\documentos\\development\\_git\\taskmanagerapi\\taskmanagerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -54,8 +54,7 @@
               "RelativeToolTip": "TaskManagerAPI\\Program.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAtwBEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T02:42:37.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T02:42:37.718Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "TaskManagerAPI\\Interfaces\\ITaskRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T01:37:05.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T01:37:05.907Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "TaskManagerAPI\\Interfaces\\ITaskService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T01:37:00.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T01:37:00.769Z"
             },
             {
               "$type": "Document",
@@ -93,12 +90,11 @@
               "RelativeToolTip": "TaskManagerAPI\\DTOs\\Task\\TaskDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T01:47:01.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T01:47:01.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TaskCreateDTO.cs",
               "DocumentMoniker": "C:\\Users\\marzi\\OneDrive\\Documentos\\Development\\_Git\\TaskManagerAPI\\TaskManagerAPI\\DTOs\\Task\\TaskCreateDTO.cs",
               "RelativeDocumentMoniker": "TaskManagerAPI\\DTOs\\Task\\TaskCreateDTO.cs",
@@ -106,12 +102,11 @@
               "RelativeToolTip": "TaskManagerAPI\\DTOs\\Task\\TaskCreateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T01:46:57.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T01:46:57.198Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TaskService.cs",
               "DocumentMoniker": "C:\\Users\\marzi\\OneDrive\\Documentos\\Development\\_Git\\TaskManagerAPI\\TaskManagerAPI\\Services\\TaskService.cs",
               "RelativeDocumentMoniker": "TaskManagerAPI\\Services\\TaskService.cs",
@@ -124,20 +119,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "TaskRepository.cs",
               "DocumentMoniker": "C:\\Users\\marzi\\OneDrive\\Documentos\\Development\\_Git\\TaskManagerAPI\\TaskManagerAPI\\Repositories\\TaskRepository.cs",
               "RelativeDocumentMoniker": "TaskManagerAPI\\Repositories\\TaskRepository.cs",
               "ToolTip": "C:\\Users\\marzi\\OneDrive\\Documentos\\Development\\_Git\\TaskManagerAPI\\TaskManagerAPI\\Repositories\\TaskRepository.cs",
               "RelativeToolTip": "TaskManagerAPI\\Repositories\\TaskRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T01:38:08.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TaskController.cs",
               "DocumentMoniker": "C:\\Users\\marzi\\OneDrive\\Documentos\\Development\\_Git\\TaskManagerAPI\\TaskManagerAPI\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "TaskManagerAPI\\Controllers\\TaskController.cs",
@@ -145,8 +140,7 @@
               "RelativeToolTip": "TaskManagerAPI\\Controllers\\TaskController.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAWwBQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T01:35:13.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T01:35:13.033Z"
             }
           ]
         }

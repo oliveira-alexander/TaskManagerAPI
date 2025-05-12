@@ -32,9 +32,9 @@ namespace TaskManagerAPI.Repositories
 
         public async Task Edit(TaskEntity task)
         {
-            var taskExistente = await _dbContext.Tasks.FirstOrDefaultAsync(taskDB => taskDB.Id == task.Id);
+            bool taskExistente = await _dbContext.Tasks.AnyAsync(taskDB => taskDB.Id == task.Id);
 
-            if (taskExistente == null)
+            if (!taskExistente)
                 throw new Exception("Tarefa não encontrada!");
 
             _dbContext.Tasks.Update(task);
