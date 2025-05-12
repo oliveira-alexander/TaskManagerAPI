@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using TaskManagerAPI.Data;
 using TaskManagerAPI.DTOs.Task;
 using TaskManagerAPI.Entities;
@@ -92,6 +93,52 @@ namespace TaskManagerAPI.Controllers
             return Ok(response);
         }
 
+        [HttpDelete("Delete")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            ApiResponse<TaskDTO> response = new ApiResponse<TaskDTO>();
+
+            try
+            {
+                if (id == 0)
+                    throw new Exception("ID inválido!");
+
+                await _taskService.Delete(id);
+
+                response.Sucesso = true;
+                response.Mensagem = "Tarefa removida com sucesso!";
+            }
+            catch (Exception ex)
+            {
+                response.Dados = null;
+                response.Mensagem = ex.Message;
+                response.Sucesso = false;
+            }
+
+            return Ok(response);
+        }
+
+        [HttpPut("Edit")]
+        public async Task<IActionResult> Edit(TaskUpdateDTO task)
+        {
+            ApiResponse<TaskDTO> response = new ApiResponse<TaskDTO>();
+
+            try
+            {
+                await _taskService.Edit(task);
+                
+                response.Sucesso = true;
+                response.Mensagem = "Tarefa alterada com sucesso!";
+            }
+            catch (Exception ex)
+            {
+                response.Dados = null;
+                response.Mensagem = ex.Message;
+                response.Sucesso = false;
+            }
+
+            return Ok(response);
+        }
 
     }
 }

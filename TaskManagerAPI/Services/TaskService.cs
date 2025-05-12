@@ -68,6 +68,23 @@ namespace TaskManagerAPI.Services
             return taskDTO;
         }
 
+        public async Task Delete(int id)
+        {
+            await _taskRepository.Delete(id);
+        }
 
+        public async Task Edit(TaskUpdateDTO taskEdit)
+        {
+            var task = new TaskEntity()
+            {
+                Id = taskEdit.Id,
+                Descricao = taskEdit.Descricao,
+                Titulo = taskEdit.Titulo,
+                Prioridade = taskEdit.Prioridade,
+                Status = taskEdit.Status
+            };
+
+           await _taskRepository.Edit(task);
+        }
     }
 }

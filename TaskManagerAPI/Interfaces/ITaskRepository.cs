@@ -11,5 +11,9 @@ namespace TaskManagerAPI.Interfaces
         Task<List<TaskEntity>> GetTasks();
 
         Task<bool> VerifyIfTaskExistsById(int id);
+
+        Task Delete(int id);
+
+        Task Edit(TaskEntity task);
     }
 }

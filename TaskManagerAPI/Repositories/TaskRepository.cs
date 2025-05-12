@@ -19,6 +19,28 @@ namespace TaskManagerAPI.Repositories
             await _dbContext.SaveChangesAsync();
         }
 
+        public async Task Delete(int id)
+        {
+            var task = await _dbContext.Tasks.FirstOrDefaultAsync(taskDB => taskDB.Id == id);
+
+            if (task == null)
+                throw new Exception("Tarefa não encontrada!");
+
+            _dbContext.Tasks.Remove(task);
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task Edit(TaskEntity task)
+        {
+            var taskExistente = await _dbContext.Tasks.FirstOrDefaultAsync(taskDB => taskDB.Id == task.Id);
+
+            if (taskExistente == null)
+                throw new Exception("Tarefa não encontrada!");
+
+            _dbContext.Tasks.Update(task);
+            await _dbContext.SaveChangesAsync();
+        }
+
         public async Task<TaskEntity> GetById(int id)
         {
             var task = await _dbContext.Tasks.FindAsync(id);

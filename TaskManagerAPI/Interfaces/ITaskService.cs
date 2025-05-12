@@ -12,6 +12,8 @@ namespace TaskManagerAPI.Interfaces
 
         Task<TaskDTO> GetById(int id);
 
-        
+        Task Delete(int id);
+
+        Task Edit(TaskUpdateDTO taskEdit);
     }
 }
