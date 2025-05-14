@@ -37,6 +37,8 @@ namespace TaskManagerAPI.Controllers
                 response.Dados = null;
                 response.Mensagem = ex.Message;
                 response.Sucesso = false;
+
+                return BadRequest(response);
             }
 
             return Ok(response);
@@ -47,12 +49,19 @@ namespace TaskManagerAPI.Controllers
         {
             ApiResponse<List<TaskDTO>> response = new ApiResponse<List<TaskDTO>>();
 
+            List<TaskDTO> taskList = new List<TaskDTO>();
             try
             {
-                List<TaskDTO> taskList = await _taskService.GetTasks();
+                taskList = await _taskService.GetTasks();
 
                 if (taskList.Count == 0)
-                    throw new Exception("Nenhuma tarefa foi encontrada!");
+                {
+                    response.Dados = null;
+                    response.Mensagem = "Nenhuma tarefa foi encontrada!";
+                    response.Sucesso = false;
+
+                    return NotFound(response);
+                }
 
                 response.Sucesso = true;
                 response.Dados = taskList;
@@ -62,6 +71,8 @@ namespace TaskManagerAPI.Controllers
                 response.Dados = null;
                 response.Mensagem = ex.Message;
                 response.Sucesso = false;
+
+                return BadRequest(response);
             }
 
             return Ok(response);
@@ -76,8 +87,14 @@ namespace TaskManagerAPI.Controllers
             try
             {
                 if (id == 0)
-                    throw new Exception("ID inválido!");
+                {
+                    response.Dados = null;
+                    response.Mensagem = "ID inválido!";
+                    response.Sucesso = false;
 
+                    return NotFound(response);
+                }
+                
                 var task = await _taskService.GetById(id);
 
                 response.Sucesso = true;
@@ -88,6 +105,8 @@ namespace TaskManagerAPI.Controllers
                 response.Dados = null;
                 response.Mensagem = ex.Message;
                 response.Sucesso = false;
+
+                return BadRequest(response);
             }
 
             return Ok(response);
@@ -101,7 +120,13 @@ namespace TaskManagerAPI.Controllers
             try
             {
                 if (id == 0)
-                    throw new Exception("ID inválido!");
+                {
+                    response.Dados = null;
+                    response.Mensagem = "ID inválido!";
+                    response.Sucesso = false;
+
+                    return NotFound(response);
+                }
 
                 await _taskService.Delete(id);
 
@@ -113,6 +138,8 @@ namespace TaskManagerAPI.Controllers
                 response.Dados = null;
                 response.Mensagem = ex.Message;
                 response.Sucesso = false;
+
+                return BadRequest(response);
             }
 
             return Ok(response);
@@ -135,6 +162,8 @@ namespace TaskManagerAPI.Controllers
                 response.Dados = null;
                 response.Mensagem = ex.Message;
                 response.Sucesso = false;
+
+                return BadRequest(response);
             }
 
             return Ok(response);
