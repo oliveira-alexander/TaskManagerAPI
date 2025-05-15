@@ -36,7 +36,6 @@ C:\Users\marzi\OneDrive\Documentos\Development\_Git\TaskManagerAPI\TaskManagerAP
 C:\Users\marzi\OneDrive\Documentos\Development\_Git\TaskManagerAPI\TaskManagerAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.TaskManagerAPI.props
 C:\Users\marzi\OneDrive\Documentos\Development\_Git\TaskManagerAPI\TaskManagerAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.TaskManagerAPI.props
 C:\Users\marzi\OneDrive\Documentos\Development\_Git\TaskManagerAPI\TaskManagerAPI\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\marzi\OneDrive\Documentos\Development\_Git\TaskManagerAPI\TaskManagerAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\marzi\OneDrive\Documentos\Development\_Git\TaskManagerAPI\TaskManagerAPI\obj\Debug\net9.0\TaskMana.7A261BF7.Up2Date
 C:\Users\marzi\OneDrive\Documentos\Development\_Git\TaskManagerAPI\TaskManagerAPI\obj\Debug\net9.0\TaskManagerAPI.dll
 C:\Users\marzi\OneDrive\Documentos\Development\_Git\TaskManagerAPI\TaskManagerAPI\obj\Debug\net9.0\refint\TaskManagerAPI.dll
